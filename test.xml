@@ -1,0 +1,48 @@
+<gitinspector>
+	<version>0.4.4</version>
+	<repository>labdsoft_2021_c3</repository>
+	<report-date>2022/06/01</report-date>
+	<changes>
+		<message>The following historical commit information, by author, was found in the repository</message>
+		<authors>
+			<author>
+				<name>1160836</name>
+				<gravatar>https://www.gravatar.com/avatar/c5ffa55baa9d5df2fd3433f29bb901a3?default=identicon</gravatar>
+				<commits>16</commits>
+				<insertions>1544</insertions>
+				<deletions>38</deletions>
+				<percentage-of-changes>100.00</percentage-of-changes>
+			</author>
+		</authors>
+	</changes>
+	<blame>
+		<message>Below are the number of rows from each author that have survived and are still intact in the current revision</message>
+		<authors>
+			<author>
+				<name>1160836</name>
+				<gravatar>https://www.gravatar.com/avatar/c5ffa55baa9d5df2fd3433f29bb901a3?default=identicon</gravatar>
+				<rows>1406</rows>
+				<stability>91.1</stability>
+				<age>0.5</age>
+				<percentage-in-comments>10.74</percentage-in-comments>
+			</author>
+		</authors>
+	</blame>
+	<filtering>
+		<authors>
+			<message>The following authors were excluded from the statistics due to the specified exclusion patterns</message>
+			<entries>
+				<entry>luis.monteiro.fintech</entry>
+				<entry>1171055</entry>
+				<entry>Lu�s Bruno Vieira Monteiro</entry>
+				<entry>1171387</entry>
+				<entry>Luis Bras</entry>
+				<entry>Miguel de Morais Teixeira Pinto</entry>
+				<entry>luisbras</entry>
+				<entry>Antonio Rocha</entry>
+				<entry>1171038</entry>
+			</entries>
+
+		</authors>
+	</filtering>
+</gitinspector>

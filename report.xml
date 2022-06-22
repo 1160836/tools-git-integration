@@ -1,0 +1,71 @@
+<gitinspector>
+	<version>0.4.4</version>
+	<repository>lei19-20_s5_3df_04</repository>
+	<report-date>2022/06/20</report-date>
+	<changes>
+		<message>The following historical commit information, by author, was found in the repository</message>
+		<authors>
+			<author>
+				<name>Jo�o Font�o</name>
+				<gravatar>https://www.gravatar.com/avatar/8deebd82b3ad9ee4083027c08cf1c34a?default=identicon</gravatar>
+				<commits>2</commits>
+				<insertions>192</insertions>
+				<deletions>129</deletions>
+				<percentage-of-changes>18.43</percentage-of-changes>
+			</author>
+			<author>
+				<name>LFRS</name>
+				<gravatar>https://www.gravatar.com/avatar/277e40261e1029634f707c1c785177dc?default=identicon</gravatar>
+				<commits>2</commits>
+				<insertions>285</insertions>
+				<deletions>5</deletions>
+				<percentage-of-changes>16.65</percentage-of-changes>
+			</author>
+			<author>
+				<name>Miguel Pinto</name>
+				<gravatar>https://www.gravatar.com/avatar/c5ffa55baa9d5df2fd3433f29bb901a3?default=identicon</gravatar>
+				<commits>9</commits>
+				<insertions>580</insertions>
+				<deletions>352</deletions>
+				<percentage-of-changes>53.50</percentage-of-changes>
+			</author>
+			<author>
+				<name>luisbrunosw</name>
+				<gravatar>https://www.gravatar.com/avatar/53708c281c0724bb3119027fec3264d2?default=identicon</gravatar>
+				<commits>6</commits>
+				<insertions>103</insertions>
+				<deletions>96</deletions>
+				<percentage-of-changes>11.42</percentage-of-changes>
+			</author>
+		</authors>
+	</changes>
+	<blame>
+		<message>Below are the number of rows from each author that have survived and are still intact in the current revision</message>
+		<authors>
+			<author>
+				<name>LFRS</name>
+				<gravatar>https://www.gravatar.com/avatar/277e40261e1029634f707c1c785177dc?default=identicon</gravatar>
+				<rows>280</rows>
+				<stability>98.2</stability>
+				<age>0.4</age>
+				<percentage-in-comments>2.50</percentage-in-comments>
+			</author>
+			<author>
+				<name>Miguel</name>
+				<gravatar>https://www.gravatar.com/avatar/c5ffa55baa9d5df2fd3433f29bb901a3?default=identicon</gravatar>
+				<rows>229</rows>
+				<stability>100.0</stability>
+				<age>1.3</age>
+				<percentage-in-comments>53.71</percentage-in-comments>
+			</author>
+			<author>
+				<name>luisbrunosw</name>
+				<gravatar>https://www.gravatar.com/avatar/53708c281c0724bb3119027fec3264d2?default=identicon</gravatar>
+				<rows>69</rows>
+				<stability>67.0</stability>
+				<age>1.9</age>
+				<percentage-in-comments>11.59</percentage-in-comments>
+			</author>
+		</authors>
+	</blame>
+</gitinspector>

@@ -1,0 +1,135 @@
+type Measure{
+    component:Component
+    metrics:[MetricDescription]
+}
+type MeasureDescription{
+    metric:String
+    value:String
+    period:Period
+}
+type Period{
+    value:String
+    bestValue:Boolean
+}
+type Metric{
+    total:Int
+    p:Int
+    ps:Int
+    metrics:[MetricDescription]
+}
+type Issue{
+    paging:Paging
+    issues:[IssueDescription]
+    components:[Component]
+    rules:[Rule]
+    users:[User]
+}
+type Paging{
+    pageIndex:Int
+    pageSize:Int
+    total:Int
+}
+type User{
+    login:String
+    name:String
+    active:Boolean
+    avatar:String
+}
+type Rule {
+    key:String
+    name:String
+    status:String
+    lang:String
+    langName:String
+}
+type Component{
+    key:String
+    enabled:Boolean
+    qualifier:String
+    name:String
+    longName:String
+    path:String
+    measures:[MeasureDescription]
+}
+type IssueDescription{
+    key:String
+    component:String
+    project:String
+    rule:String
+    status:String
+    resolution:String
+    severity:String
+    message:String
+    line:String
+    hash:String
+    author:String
+    effort:String
+    creationDate:String
+    updateDate:String
+    tags:[String]
+    type:String
+    comments:[Comment]
+}
+type Comment{
+    key:String
+    login:String
+    htmlText:String
+    markdown:String
+    updatable:String
+    createdAt:String
+}
+type TypeMetric {
+    types:[String]
+}
+type MetricDescription{
+    id:String
+    key:String
+    name:String
+    description:String
+    domain:String
+    type:String
+    direction:String
+    qualitative:Boolean
+    hidden:Boolean
+    custom:Boolean
+    higherValuesAreBetter:Boolean
+}
+type AdditionalInfo{
+    intactRows:Int
+    age:Float
+    stability:Float
+    commentsPercentage:Float
+}
+type Author {
+    authorName:String
+    numCommits:Int
+    insertions:Int
+    deletions:Int
+    changesPercentage:Float
+    addInfo:AdditionalInfo
+}
+
+
+type Report{
+    dateReport: String
+    repository:String
+    author:Author
+}
+
+
+
+type Query {
+    configureLocalRepository(location:String):String
+    getRepositoryBitBucket(username:String!,appPassword:String!,repository:String!,repositoryName:String!):String
+    reportByAuthor(author:String):Report
+    reportAllAuthors:[Report]
+    reportAllAuthorsMultipleInstances(authors:[String]):[Report]
+    reportByAuthorTimeInterval(author:String,startDate:String,endDate:String):Report
+    reportAllAuthorTimeInterval(startDate:String,endDate:String):[Report]
+    createAccessTokenSonar(nameToken:String):String
+    createProjectFromBitbucket(clientId:String,clientSecret:String,key:String,workspace:String):String
+    getMetricsSonar:Metric
+    getTypeMetricsSonar:TypeMetric
+    getIssuesSonar(author:[String]):Issue
+    getMeasuresSonar(projectKey:String,metrics:[String]):Measure
+}
